@@ -63,3 +63,65 @@ nav {
 }
 
 
+/* new codes */
+/* 
+
+
+
+/* first method  */
+
+
+
+/* h1 span {
+    position: relative;
+    display: inline;
+    visibility: visible;
+}
+
+
+h1:hover span:nth-child(even) {
+
+    animation: text 1s 1; 
+}
+
+@keyframes text{
+    0%{   
+        visibility: hidden;
+        letter-spacing: -0.35em;   
+    }
+    100%{
+        letter-spacing: 0;
+        visibility: visible;
+    }
+} */
+
+
+
+
+/* second method */
+
+h1{
+    width: 100%;
+}
+
+h1 span:nth-child(even) {
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom:20px;
+    animation: text 3s 1;
+}
+
+@keyframes text{
+    0%{
+        color: white;
+        font-weight: 100;
+    }
+    30%{
+        font-weight: 350;
+    }
+    85%{
+        letter-spacing: 5px;
+        font-weight: 500;
+    }
+} 
