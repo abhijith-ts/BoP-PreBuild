@@ -1,0 +1,51 @@
+body{
+    width: auto;
+    height: 100%;
+    background-color: #000010;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.heading h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.refresh button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.refresh button:hover {
+    background-color: #0056b3;
+}
+
+.bottom{
+    padding: 50px;
+    color: white;
+}
+
+.api1box, .api2box, .api3box{
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #f8f9fa;
+}
+
+
