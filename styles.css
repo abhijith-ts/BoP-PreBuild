@@ -51,17 +51,24 @@ nav {
 }
 
 .bottom{
+    margin-left: 150px;
+    margin-right: 150px;
     padding: 50px;
     color: white;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .api1box, .api2box, .api3box{
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 10px;
     border-style: solid;
     border-color: #f8f9fa;
+    align-items: center;
+    justify-content: center;
 }
-
 
 /* new codes */
 /* 
@@ -124,4 +131,28 @@ h1 span:nth-child(even) {
         letter-spacing: 5px;
         font-weight: 500;
     }
-} 
+}
+
+.api1button button{
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Afacad Flux'; 
+}
+
+.api2button button{
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Afacad Flux'; 
+}
