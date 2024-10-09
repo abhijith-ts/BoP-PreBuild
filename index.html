@@ -19,7 +19,7 @@
                     </h1>
                 </div>
                 <div class="refresh">
-                    <button>
+                    <button onclick="location.reload()">
                         Refresh
                     </button>
                 </div>
@@ -29,12 +29,28 @@
         <div class="bottom">
             <div class="api1">
                 <div class="api1box">
-                    First API goes here
+                    <div class="api1displayer" id="api1displayer">
+                        First API goes here
+                    </div>
+                    <div id="api1follower"></div>
+                    <div class="api1button" id="api1button">
+                        <button>
+                            Get Quote
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="api2">
                 <div class="api2box">
-                    Second API goes here
+                    <div class="api2displayer" id="api2displayer">
+                        Second API goes here
+                    </div>
+                    <img id="random-image" src="" style="width: 500px; height: auto;"/>
+                    <div class="api2button" id="api2button">
+                        <button>
+                            Get Image
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="api3">
@@ -44,5 +60,6 @@
             </div>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
