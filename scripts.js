@@ -18,3 +18,9 @@ document.getElementById('api2button').addEventListener('click', async () => {
             console.log(data)
         })
 })
+
+const text = document.querySelector('.logoText p');
+text.innerHTML = text.innerText.split("").map(
+  (char,i) =>
+  `<span style="transform:rotate(${i * 14}deg)">${char}</span>`
+).join("")
