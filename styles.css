@@ -63,11 +63,10 @@ nav {
 }
 
 .bottom{
-    color: white;
-    z-index: 0;
-    /* display: flex;
-    flex-direction: column; */
-    align-items: center;
+  position: relative;  
+  color: white;
+  z-index: 0;
+  align-items: center;
 }
 
 .api1box, .api2box, .api3box{
@@ -85,14 +84,7 @@ nav {
     /* padding: 50px; */
 }
 
-/* new codes */
-/* 
-
-
-
 /* first method  */
-
-
 
 /* h1 span {
     position: relative;
@@ -117,190 +109,190 @@ h1:hover span:nth-child(even) {
     }
 } */
 
-
-
-
 /* second method */
 
 h1{
-    width: 100%;
+  width: 100%;
 }
 
 h1 span:nth-child(even) {
-    color: black;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom:20px;
-    animation: text 3s 1;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom:20px;
+  animation: text 3s 1;
 }
 
 @keyframes text{
-    0%{
-        color: white;
-        font-weight: 100;
-    }
-    30%{
-        font-weight: 350;
-    }
-    85%{
-        letter-spacing: 5px;
-        font-weight: 500;
-    }
-}
-
-
- .mainButton {
-    margin: 10px;
-    position: relative;
-    background: #000010;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-    padding: 1rem 3rem;
-    transition: 0.2s;
-  }
-  
-  .mainButton:hover {
-    letter-spacing: 0.2rem;
-    padding: 1.1rem 3.1rem;
-    background: var(--clr);
-    color: var(--clr);
-    /* box-shadow: 0 0 35px var(--clr); */
-    animation: box 3s infinite;
-  }
-  
-  .mainButton::before {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    background: #000010;
-  }
-  
-  .mainButton span {
-    position: relative;
-    z-index: 1;
-  }
-  .mainButton i {
-    position: absolute;
-    inset: 0;
-    display: block;
-  }
-  
-  .mainButton i::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    left: 80%;
-    top: -2px;
-    border: 2px solid var(--clr);
-    background: #272822;
-    transition: 0.2s;
-  }
-  
-  .mainButton:hover i::before {
-    width: 15px;
-    left: 20%;
-    animation: move 3s infinite;
-  }
-  
-  .mainButton i::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    left: 20%;
-    bottom: -2px;
-    border: 2px solid var(--clr);
-    background: #272822;
-    transition: 0.2s;
-  }
-  
-  .mainButton:hover i::after {
-    width: 15px;
-    left: 80%;
-    animation: move 3s infinite;
-  }
-  
-  @keyframes move {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes box {
-    0% {
-      box-shadow: #27272c;
-    }
-    50% {
-      box-shadow: 0 0 25px var(--clr);
-    }
-    100% {
-      box-shadow: #27272c;
-    }
-  }
-  
-.rotationHolder{
-    justify-content: center;
-}
-
-  .rotation{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    /* background-color: #ccc; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  0%{
     color: white;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    z-index: 1;
+    font-weight: 100;
   }
+  30%{
+    font-weight: 350;
+  }
+  85%{
+    letter-spacing: 5px;
+    font-weight: 500;
+  }
+}
+
+.mainButton {
+  margin: 10px;
+  position: relative;
+  background: #000010;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+}
   
-  .newLogo{
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    background: url(assets/TinkerHub_MEC\ Light.png);
-    background-size: 180px;
-    margin-left: -38px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
+.mainButton:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+  cursor: pointer;
+}
+
+.mainButton::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #000010;
+}
+
+.mainButton span {
+  position: relative;
+  z-index: 1;
+}
+.mainButton i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.mainButton i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.mainButton:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.mainButton i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.mainButton:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
   }
-  
-  .logoText{
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-weight: 700;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation:rotateTest 10s linear infinite;
+  50% {
+    transform: translateX(5px);
   }
-  
-  @keyframes rotateTest {
-    0%{
-      transform: rotate(360deg);
-    }
-    100%{
-      transform: rotate(0deg);
-    }
+  100% {
+    transform: translateX(0);
   }
-  
-  .logoText span{
-    position: absolute;
-    left: 50%;
-    transform-origin: 0 100px;
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
   }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+.rotationHolder{
+  position: fixed;
+  justify-content: center;
+  margin-left: 85%;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.rotation{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: #ccc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.newLogo{
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: url(assets/TinkerHub_MEC\ Light.png);
+  background-size: 180px;
+  margin-left: -38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.logoText{
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation:rotateTest 10s linear infinite;
+}
+
+@keyframes rotateTest {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.logoText span{
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 100px;
+}
