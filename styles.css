@@ -238,13 +238,15 @@ h1 span:nth-child(even) {
   }
 }
 
-.rotationHolder{
+.rotationHolder {
   position: fixed;
-  justify-content: center;
-  margin-left: 85%;
-  margin-top: 30px;
+  right: 110px; 
+  top: 530px;   
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
+
 
 .rotation{
   position: absolute;
@@ -296,3 +298,6 @@ h1 span:nth-child(even) {
   left: 50%;
   transform-origin: 0 100px;
 }
+
+
+
