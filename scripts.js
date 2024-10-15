@@ -20,11 +20,12 @@ document.getElementById('api2button').addEventListener('click', async () => {
 })
 
 document.getElementById('api3button').addEventListener('click', async () => {
-    let paste = prompt("Enter a text", "hello");
+    let title = prompt("Enter a title", "hello");
+    let paste = prompt("Enter a message", "hello world");
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify({
-          title: 'foo',
+          title: title,
           body: paste,
           userId: 1,
         }),
@@ -35,8 +36,10 @@ document.getElementById('api3button').addEventListener('click', async () => {
         .then((response) => response.json())
         .then((json) => {
             console.log(json);
+            document.getElementById('api3title').innerHTML = json.title;
             document.getElementById('api3paste').innerHTML = json.body;
-        });      
+            document.getElementById('api3displayer').innerHTML = null
+          });      
 })
 
 const text = document.querySelector('.logoText p');
