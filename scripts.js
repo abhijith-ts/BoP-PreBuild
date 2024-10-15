@@ -19,6 +19,26 @@ document.getElementById('api2button').addEventListener('click', async () => {
         })
 })
 
+document.getElementById('api3button').addEventListener('click', async () => {
+    let paste = prompt("Enter a text", "hello");
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+          title: 'foo',
+          body: paste,
+          userId: 1,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json);
+            document.getElementById('api3paste').innerHTML = json.body;
+        });      
+})
+
 const text = document.querySelector('.logoText p');
 text.innerHTML = text.innerText.split("").map(
   (char,i) =>
